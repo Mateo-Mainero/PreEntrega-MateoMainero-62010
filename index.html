@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Simulador De Prestamos</title>
+    
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar">
+    <a href="index.html" target="_blank"><img src="img/logo-Banco-Nacion.png" alt="Logo" class="logo"></a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="https://www.bna.com.ar/Empresas" target="_blank">Empresas</a>
+        <a href="https://www.instagram.com/benjamainero/" target="_blank">Contacto</a>
+    </div>
+</nav>
+
+    <div class="container">
+        <h1>Simulador de Préstamo</h1>        
+        <form id="formPrestamo">
+            <label for="monto">Monto del préstamo:</label>
+            <input type="number" id="monto" name="monto" required>
+            
+            <label for="tasaInteresAnual">Tasa de interés anual (%):</label>
+            <input type="number" id="tasaInteresAnual" name="tasaInteresAnual" required>
+            
+            <label for="meses">Cantidad de meses:</label>
+            <input type="number" id="meses" name="meses" required>
+            
+            <input type="submit" value="Calcular Pago Mensual">
+        </form>
+        <div id="resultado"></div>
+        <div id="prestamosListados"></div>
+        <div class="fecha" id="fechaHora"></div>
+    </div>
+      
+    <footer class="footer">
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
